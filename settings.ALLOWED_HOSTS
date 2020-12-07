@@ -1,0 +1,9 @@
+# ##################################################
+# My notes:
+# 1. Added below line to $ALLOWED_HOSTS 
+#    ['heroku app name', 'localhost', 'heroku local']
+# End My notes
+# ##################################################
+# Copy below
+
+ALLOWED_HOSTS = ['locallibrary-app-django.herokuapp.com', '127.0.0.1', '0.0.0.0']

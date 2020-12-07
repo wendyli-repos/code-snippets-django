@@ -1,0 +1,12 @@
+# ##################################################
+# My notes:
+# 1. Comment out/ delete the $DEBUG in the original settings.py
+# 2. Replace with below line
+# 3. Using `nano .bash_profile` to access environemtnal variable and set $DEBUG_VALUE there
+#    Refer to this -> export DEBUG_VALUE="True"
+# 4. DEBUG must be False in production
+# End My notes
+# ##################################################
+# Copy below
+
+DEBUG = (os.environ.get("DEBUG_VALUE") == "True")
