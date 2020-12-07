@@ -1,0 +1,14 @@
+# ##################################################
+# My notes:
+# 1. Install 'dj_database_url'. This package is to parse $DATABSE_URL to a dictioanry. 
+# 1.1 (extra) Get $DATABASE_URL by running `heroku config`
+# 2. Copy below code snippet to the end of settings.py
+# End My notes
+# ##################################################
+# Copy all below
+
+
+# Heroku: Update database configuration from $DATABASE_URL.
+import dj_database_url
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)

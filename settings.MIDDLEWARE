@@ -1,0 +1,21 @@
+# ##################################################
+# My notes:
+# 1. Added below line as the second element of $MIDDLEWARE 
+# End My notes
+# ##################################################
+# Copy below
+
+
+'whitenoise.middleware.WhiteNoiseMiddleware',
+
+# Sample
+MIDDLEWARE = [
+    'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
